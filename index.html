@@ -60,20 +60,20 @@ Email: <input name="email" required="" size="60" type="email"/>
      name: fullname
    };
 
-// // Identify call
-//     analytics.identify(email, {
-//       email: email,
-//       name: fullname,
-//       shoeType: shoeType
-//     });
-//  //  Sign-up Track call
-//     analytics.track('User Signed Up', user, function() {
-//       window.location.href = "";
-//     });
-// // Ecommerce Events
-   // analytics.track('Products Searched', {
-   //  query: 'kith air force 1'
-   // });
+Identify call
+analytics.identify(email, {
+email: email,
+name: fullname,
+shoeType: shoeType
+});
+Sign-up Track call
+analytics.track('User Signed Up', user, function() {
+window.location.href = "";
+});
+Ecommerce Events
+analytics.track('Products Searched', {
+query: 'kith air force 1'
+});
 
 
    // analytics.track('Product List Viewed', {
