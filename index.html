@@ -60,13 +60,13 @@ Email: <input name="email" required="" size="60" type="email"/>
      name: fullname
    };
 
-Identify call
+// Identify call
 analytics.identify(email, {
 email: email,
 name: fullname,
 shoeType: shoeType
 });
-Sign-up Track call
+// Sign-up Track call
 analytics.track('User Signed Up', user, function() {
 window.location.href = "";
 });
