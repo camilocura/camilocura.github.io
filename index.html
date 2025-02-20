@@ -20,11 +20,14 @@
 
 
 <!-- Search Bar Section -->
+<!--
 <form onsubmit="searchSneakers(event)">
     <input type="text" id="searchInput" placeholder="Search sneakers..." size="50">
     <input type="submit" value="Search">
 </form>
+-->
 <!-- Search Bar Section -->
+
 
 <h1>Sign up for the latest information on sneaker drops!</h1>
 <p>Enter your contact information if you would like to receive alerts about the best sneakers as soon as they drop.</p>
@@ -61,19 +64,20 @@ Email: <input name="email" required="" size="60" type="email"/>
    };
 
 // Identify call
-analytics.identify(email, {
-email: email,
-name: fullname,
-shoeType: shoeType
-});
+  analytics.identify(email, {
+    email: email,
+    name: fullname,
+    shoeType: shoeType
+  });
+   
 // Sign-up Track call
-analytics.track('User Signed Up', user, function() {
-window.location.href = "";
-});
-Ecommerce Events
-analytics.track('Products Searched', {
-query: 'kith air force 1'
-});
+  analytics.track('User Signed Up', user, function() {
+    window.location.href = "";
+  });
+//  Ecommerce Events
+//  analytics.track('Products Searched', {
+//  query: 'kith air force 1'
+//  }); 
 
 
    // analytics.track('Product List Viewed', {
